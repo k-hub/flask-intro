@@ -55,7 +55,12 @@ def say_hello():
       </body>
     </html>
     """
-
+        # <form action="/diss">
+        #   <select name="diss">
+        #     <option value="acting like a child!">acting like a child!</option>
+        #     <option value="a terrible programmer!">a terrible programmer!</option>
+        #     <option value="not that bad!">not that bad!</option>
+        # </form>
 
 @app.route('/greet')
 def greet_person():
@@ -75,6 +80,13 @@ def greet_person():
       </body>
     </html>
     """ % (player, compliment)
+
+# @app.route('/diss')
+# def diss_person():
+#   """Get user by name, allows user to select a diss, and returns to user."""
+#     player = request.args.get("person")
+
+#     diss = request.args.get("diss")
 
 
 if __name__ == '__main__':
